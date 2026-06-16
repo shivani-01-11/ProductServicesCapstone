@@ -1,6 +1,5 @@
 package com.example.productservicescapstone.dtos;
 
-import com.example.productservicescapstone.modules.Category;
 import com.example.productservicescapstone.modules.Product;
 import lombok.Getter;
 import lombok.Setter;
