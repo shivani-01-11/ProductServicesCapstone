@@ -1,12 +1,18 @@
 package com.example.productservicescapstone.modules;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
-public class Category {
+@Entity
+public class Category extends BaseModel{
 
-    private long id;
-    private String name;
+    private String description;
+    @OneToMany(mappedBy = "category")
+    private List<Product> products;
 }
